@@ -7,6 +7,7 @@ from selenium.webdriver.common.keys import Keys
 
 # Access the chrome webdriver and open the browser to the microsoft login page
 # Note: Chrome instance DOES know it is being automated
+# Note: May need to run 'xattr -d com.apple.quarantine chromedriver'
 driver = webdriver.Chrome('./chromedriver')
 driver.get("https://timesheet.amsoftware.com/EApplications/esecurity/Login.jsp")
 
